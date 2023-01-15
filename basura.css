@@ -1,0 +1,134 @@
+
+.EncabezadoPadre{
+    display: flex;
+    font-size: 20px;
+    background: rgb(3, 3, 3);
+    color: white;
+    justify-content: flex-end;
+    
+}
+.enlace{
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.enlace:hover{
+    color: rgb(60, 73, 73);
+}
+.enlace:active{
+    color: #c45e5e;
+}
+.seccion{
+    background: #080707;
+    padding: 120px;
+
+}
+.texto{
+    color: white;
+}
+.titulo{
+    color: aliceblue;
+}
+
+/* columnas para precio */
+.container{
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap ;
+}
+.Titulo{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Tipografia{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.columna{
+    margin: 0px auto;
+    background: rgb(228, 228, 228);
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px;
+    box-sizing: border-box;
+    width: 23%;
+
+}
+.Presio{
+    font-size: 50px;
+    color: #04a194;
+}
+.boton{
+    display: block;
+    background: #db7676;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.linea{
+    color: black;
+}
+.boton:hover{
+    background:rgb(236, 76, 65);
+}
+@media (max-width: 1280px){
+    .columna{
+        width: 45%;
+        margin-bottom: 18px;
+    }
+}
+@media (max-width: 700px){
+    .columna{
+        width: 100%;
+        margin-bottom: 18px;
+    }
+}
+/* practica */
+.padre{
+    display: flex;
+    background: orange;
+    padding: 50px;
+    width: 80%;
+    height: 700px; 
+    margin: 90px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+}     
+.hijo{
+    text-align: center; 
+    background: rgb(0, 255, 255);
+    color: black;
+    width: 300px;
+    height: 200px; 
+    margin: 20px;
+    font-size: 80px;
+    /* flex-grow: 1;
+    flex-shrink: 0; */
+    flex: 1 1 auto;
+    order: 1;
+    
+}  
+
+
+@media (max-width: 600px) {
+.EncabezadoPadre {
+   
+    background: rgb(235, 126, 126);
+    flex-direction: column;
+    margin: 20px;  
+}
+.enlace{
+    margin: 15px 0px;
+}
+}
